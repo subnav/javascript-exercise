@@ -2,8 +2,8 @@
  * 深拷贝
  */
 
-function deepClone(obj = {}, map = new Map) {
-  if (typeof obj !== 'object') return func;
+function deepClone(obj = {}, map = new Map()) {
+  if (typeof obj !== 'object') return obj;
 
   //使用 map 防止循环引用栈溢出
   if (map.get(obj)) return map.get(obj);
